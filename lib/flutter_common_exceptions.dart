@@ -80,3 +80,10 @@ class ParseOrderFailureException extends AppException {
         );
   final String status;
 }
+
+// Network Request
+// network-request-failed
+class NetworkRequestFailedException extends AppException {
+  NetworkRequestFailedException()
+      : super('network-request-failed', 'Network Request Failed');
+}
