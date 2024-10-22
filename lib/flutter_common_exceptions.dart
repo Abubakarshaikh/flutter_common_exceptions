@@ -24,6 +24,10 @@ class WrongPasswordException extends AppException {
   WrongPasswordException() : super('wrong-password', 'Wrong password');
 }
 
+class InvalidEmailException extends AppException {
+  InvalidEmailException() : super('invalid-email', 'Invalid Email');
+}
+
 class UserNotFoundException extends AppException {
   UserNotFoundException() : super('user-not-found', 'User not found');
 }
