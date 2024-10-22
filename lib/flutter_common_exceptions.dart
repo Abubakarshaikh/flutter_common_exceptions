@@ -81,6 +81,14 @@ class ParseOrderFailureException extends AppException {
   final String status;
 }
 
+// Too many request Exception
+
+//
+
+class TooManyRequestsException extends AppException {
+  TooManyRequestsException() : super('too-many-requests', 'Too Many Request');
+}
+
 // Network Request
 // network-request-failed
 class NetworkRequestFailedException extends AppException {
