@@ -105,3 +105,9 @@ class ExpiredActionCodeException extends AppException {
   ExpiredActionCodeException()
       : super('expired-action-code', 'Expired Action Code');
 }
+
+//
+class InvalidActionCodeException extends AppException {
+  InvalidActionCodeException()
+      : super('invalid-action-code', 'Invalid Action Code');
+}
