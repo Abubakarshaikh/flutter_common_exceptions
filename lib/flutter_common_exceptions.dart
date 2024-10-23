@@ -95,3 +95,8 @@ class NetworkRequestFailedException extends AppException {
   NetworkRequestFailedException()
       : super('network-request-failed', 'Network Request Failed');
 }
+
+class OperationNotAllowedException extends AppException {
+  OperationNotAllowedException()
+      : super('operation-not-allowed', 'Operation Not Allowed');
+}
