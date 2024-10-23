@@ -120,3 +120,8 @@ class InvalidActionCodeException extends AppException {
   InvalidActionCodeException()
       : super('invalid-action-code', 'Invalid Action Code');
 }
+
+class NoImagesPickedException extends AppException {
+  NoImagesPickedException()
+      : super('no-images-were-picked', 'No images were picked.');
+}
