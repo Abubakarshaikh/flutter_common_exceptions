@@ -100,3 +100,8 @@ class OperationNotAllowedException extends AppException {
   OperationNotAllowedException()
       : super('operation-not-allowed', 'Operation Not Allowed');
 }
+
+class ExpiredActionCodeException extends AppException {
+  ExpiredActionCodeException()
+      : super('expired-action-code', 'Expired Action Code');
+}
