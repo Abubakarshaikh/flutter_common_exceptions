@@ -10,6 +10,15 @@ sealed class AppException implements Exception {
   String toString() => message;
 }
 
+/// Serialization
+class SerializationException extends AppException {
+  SerializationException({String? details})
+      : super(
+          'serialization-error',
+          'Failed to serialize or deserialize data${details != null ? ': $details' : ''}',
+        );
+}
+
 /// Auth
 class EmailAlreadyInUseException extends AppException {
   EmailAlreadyInUseException()
